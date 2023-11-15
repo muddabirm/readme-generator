@@ -33,6 +33,13 @@ const questions = [
         message: 'what are the credits?',
         name: 'credits'
 
+    },
+    {
+        type: 'list',
+        message: 'select which license',
+        name: 'license',
+        choices: ['apache', 'boost','bsd','none']
+
     }
 ];
 // TODO: Create a function to write README file
@@ -50,7 +57,9 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer
         .prompt (questions)
-        .then((answers) => { writeToFile("README.md",generateMarkdown(answers));
+        .then((answers) => {
+        writeToFile("readme.md",generateMarkdown(answers));
+        console.log(answers);
         });
     }
 
