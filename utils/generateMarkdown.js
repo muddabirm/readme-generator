@@ -1,13 +1,13 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) { 
-  if (liscense === 'apache' ){
+  if (license === 'apache' ){
     return `[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`;
   }
-  else if (liscense === 'boost'){
+  else if (license === 'boost'){
     return`[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)]`;
   }
-  else if (liscense === 'bsd'){
+  else if (license === 'bsd'){
     return`[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)]`;
   }
   else  {
